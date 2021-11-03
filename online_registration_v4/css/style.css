@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+.logo{
+    background-color: rgb(44,59,71);
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1.5em;
+    margin: -10px;
+}
+.fa-laptop-code{
+    margin-right: 10px;
+}
+.header{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 45px;
+    color: rgb(32,65,97);
+}
+.header2{
+    font-size: 22px;
+    text-align: center;
+    color: grey;
+    padding-bottom: 40px;
+    border-bottom: 5px solid rgb(44,59,71);
+    margin-bottom: 3px;
+}
+.fa-phone{
+    margin-left: 10px;
+}
+form{
+    border-top: 2px solid rgb(44,59,71);
+}
+legend{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(32,65,97);
+    margin-bottom: 15px;
+}
+label, select, input{
+    display: block;
+    border-radius: 8px;
+}
+label{
+    font-size: 18px;
+    color: grey;
+    margin: 0;
+}
+.fieldset1 input,
+.fieldset1 select{
+    display: block;
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(245, 245, 245);
+    border: none;
+}
+input{
+    transition-duration: .5s;
+}
+input:focus, 
+select:focus, 
+textarea:focus{
+    border: 3px solid rgb(44,59,71);
+    background-color: rgb(220, 240, 247);
+}
+select{
+    color: lightgray;
+}
+::placeholder{
+    color: lightgray;
+    text-align: right;
+    text-transform: capitalize;
+    font-style: italic;
+}
+#zip{
+    width: 15rem;
+}
+.fieldset1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: none;
+    padding-bottom: 35px;
+    border-bottom: 2px solid rgb(32,65,97);
+}
+.fieldset2{
+    border: none;
+    margin-top: 25px;
+}
+.fa-envelope-open{
+    margin-left: 10px;
+}
+input[type="checkbox"]{
+    display: inline-block;
+    margin-right: 15px;;
+}
+input[type=radio],
+input.radio {
+    float: left;
+    clear: none;
+    margin: 6px 15px 0 2px;
+}
+.fieldset2 p{
+    color: gray;
+    font-size: 20px;
+    margin-top: 0;
+} 
+.fieldset2 label{
+    color: grey;
+    font-size: 18px;
+}
+label[for="other-topics"]{
+    margin-bottom: 15px;
+}
+textarea{
+    display: block;
+    height: 120px;
+    width: 100%;
+    border: none;
+    background-color: rgb(245, 245, 245);
+    border-radius: 8px;
+}
+input[type="submit"]{
+    font-size: 18px;
+    background-color: lightseagreen;
+    width: 98%;
+    height: 60px;
+    color: white;
+    border: none;
+}
+footer{
+    font-size: 15px;
+    color: grey;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .container{
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #zip{
+        width: 20rem;
+    }
+}
