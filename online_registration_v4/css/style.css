@@ -49,7 +49,8 @@ label, select, input{
 label{
     font-size: 18px;
     color: grey;
-    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 .fieldset1 input,
 .fieldset1 select{
@@ -67,7 +68,7 @@ input:focus,
 select:focus, 
 textarea:focus{
     border: 3px solid rgb(44,59,71);
-    background-color: rgb(220, 240, 247);
+    background-color: rgb(220, 240, 247, .5);
 }
 select{
     color: lightgray;
@@ -79,7 +80,7 @@ select{
     font-style: italic;
 }
 #zip{
-    width: 15rem;
+    width: 50%;
 }
 .fieldset1{
     display: flex;
@@ -105,6 +106,9 @@ input.radio {
     float: left;
     clear: none;
     margin: 6px 15px 0 2px;
+}
+.radio{
+    margin-bottom: 25px;
 }
 .fieldset2 p{
     color: gray;
@@ -140,13 +144,35 @@ footer{
     text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .container{
         max-width: 900px;
         margin-left: auto;
         margin-right: auto;
     }
+    .fieldset1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items:flex-start;
+    }
+    .fieldset1 input{
+        width: 80%;
+        margin-bottom: 25px;
+    }
+    .fieldset1 label{
+        width: 20%;
+        margin-top: 20px;
+    }
+    .fieldset1 select{
+        width: 80%;
+        margin-bottom: 25px;
+    }
+    legend{
+        margin-bottom: 30px;
+    }
     #zip{
-        width: 20rem;
+        display: inline-block;
+        width: 25%;
     }
 }
