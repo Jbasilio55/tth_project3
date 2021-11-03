@@ -78,6 +78,7 @@ select{
     text-align: right;
     text-transform: capitalize;
     font-style: italic;
+    padding: 5px;
 }
 #zip{
     width: 50%;
